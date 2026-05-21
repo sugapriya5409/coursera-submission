@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2026-05-21T05:04:15.209Z",
+    "end": "2026-05-21T05:04:21.334Z",
+    "duration": 6125,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "406a0605-0779-43ef-8770-9e503560eac0",
+      "title": "",
+      "fullFile": "cypress\\e2e\\task2_fixtures_and_env_variables.cy.js",
+      "file": "cypress\\e2e\\task2_fixtures_and_env_variables.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "0e4e3348-8af1-4bb5-95c4-0af4b5668042",
+          "title": "Cypress Mini Shop UI Testing - using fixtures and env variables",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Add New Products using fixture files",
+              "fullTitle": "Cypress Mini Shop UI Testing - using fixtures and env variables Add New Products using fixture files",
+              "timedOut": null,
+              "duration": 6047,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.fixture(\"ProductDetails\").each(details => {\n  // using fixture file to add multiple products\n  cy.addNewProducts(details.ProductName, details.ProductPrice, details.ProductCategory);\n});",
+              "err": {},
+              "uuid": "3b51fe8c-b6e0-4efa-96ae-5f861da8ab34",
+              "parentUUID": "0e4e3348-8af1-4bb5-95c4-0af4b5668042",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "3b51fe8c-b6e0-4efa-96ae-5f861da8ab34"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 6047,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

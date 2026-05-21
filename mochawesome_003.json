@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2026-05-21T05:04:38.531Z",
+    "end": "2026-05-21T05:04:45.865Z",
+    "duration": 7334,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "f975a8da-42e8-446a-8cd0-a13d1f5608cb",
+      "title": "",
+      "fullFile": "cypress\\e2e\\task4_handling_flaky_test.cy.js",
+      "file": "cypress\\e2e\\task4_handling_flaky_test.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "808b483e-73a2-4a47-adec-8eebc95cbcac",
+          "title": "Cypress Mini Shop UI Testing - handling flaky test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Add New Products",
+              "fullTitle": "Cypress Mini Shop UI Testing - handling flaky test Add New Products",
+              "timedOut": null,
+              "duration": 7260,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.fixture(\"ProductDetails\").each(details => {\n  // using fixture file to add multiple products\n  cy.addNewProducts(details.ProductName, details.ProductPrice, details.ProductCategory);\n});\ncy.pause();\ncy.url().should(\"include\", \"dashboard\");\ncy.get(\"h1\").debug().should(\"contain.text\", \"Product Dashboard\");",
+              "err": {},
+              "uuid": "0b56123a-28dd-4f7d-b8a1-494c32d1b9c8",
+              "parentUUID": "808b483e-73a2-4a47-adec-8eebc95cbcac",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "0b56123a-28dd-4f7d-b8a1-494c32d1b9c8"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 7260,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

@@ -1,0 +1,298 @@
+{
+  "stats": {
+    "suites": 4,
+    "tests": 5,
+    "passes": 5,
+    "pending": 0,
+    "failures": 0,
+    "testsRegistered": 5,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "start": "2026-05-21T05:04:07.763Z",
+    "end": "2026-05-21T05:04:45.865Z",
+    "duration": 38102
+  },
+  "results": [
+    {
+      "uuid": "406a0605-0779-43ef-8770-9e503560eac0",
+      "title": "",
+      "fullFile": "cypress\\e2e\\task2_fixtures_and_env_variables.cy.js",
+      "file": "cypress\\e2e\\task2_fixtures_and_env_variables.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "0e4e3348-8af1-4bb5-95c4-0af4b5668042",
+          "title": "Cypress Mini Shop UI Testing - using fixtures and env variables",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Add New Products using fixture files",
+              "fullTitle": "Cypress Mini Shop UI Testing - using fixtures and env variables Add New Products using fixture files",
+              "timedOut": null,
+              "duration": 6047,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.fixture(\"ProductDetails\").each(details => {\n  // using fixture file to add multiple products\n  cy.addNewProducts(details.ProductName, details.ProductPrice, details.ProductCategory);\n});",
+              "err": {},
+              "uuid": "3b51fe8c-b6e0-4efa-96ae-5f861da8ab34",
+              "parentUUID": "0e4e3348-8af1-4bb5-95c4-0af4b5668042",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "3b51fe8c-b6e0-4efa-96ae-5f861da8ab34"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 6047,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "c8d48e06-8960-49a7-9c77-ddad5d13369f",
+      "title": "",
+      "fullFile": "cypress\\e2e\\task3_session_and_intercept.cy.js",
+      "file": "cypress\\e2e\\task3_session_and_intercept.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "876e2fc7-36de-41a5-a490-33ef74e9bbed",
+          "title": "Cypress Mini Shop UI Testing - using session",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Add New Products",
+              "fullTitle": "Cypress Mini Shop UI Testing - using session Add New Products",
+              "timedOut": null,
+              "duration": 6284,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.fixture(\"ProductDetails\").each(details => {\n  // using fixture file to add multiple products\n  cy.addNewProducts(details.ProductName, details.ProductPrice, details.ProductCategory);\n});",
+              "err": {},
+              "uuid": "fc28d51f-e2ff-4dc8-aec1-be3615c3d9fd",
+              "parentUUID": "876e2fc7-36de-41a5-a490-33ef74e9bbed",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Cancel Add New Products Action",
+              "fullTitle": "Cypress Mini Shop UI Testing - using session Cancel Add New Products Action",
+              "timedOut": null,
+              "duration": 4546,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.fixture(\"ProductDetails\").each(details => {\n  // using fixture file to add multiple products\n  cy.cancelAddNewProductsAction(details.ProductName, details.ProductPrice, details.ProductCategory);\n});",
+              "err": {},
+              "uuid": "0c5e76ec-23f7-4d6b-bc95-ec3d12b2a89c",
+              "parentUUID": "876e2fc7-36de-41a5-a490-33ef74e9bbed",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "fc28d51f-e2ff-4dc8-aec1-be3615c3d9fd",
+            "0c5e76ec-23f7-4d6b-bc95-ec3d12b2a89c"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 10830,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "f975a8da-42e8-446a-8cd0-a13d1f5608cb",
+      "title": "",
+      "fullFile": "cypress\\e2e\\task4_handling_flaky_test.cy.js",
+      "file": "cypress\\e2e\\task4_handling_flaky_test.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "808b483e-73a2-4a47-adec-8eebc95cbcac",
+          "title": "Cypress Mini Shop UI Testing - handling flaky test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Add New Products",
+              "fullTitle": "Cypress Mini Shop UI Testing - handling flaky test Add New Products",
+              "timedOut": null,
+              "duration": 7260,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.fixture(\"ProductDetails\").each(details => {\n  // using fixture file to add multiple products\n  cy.addNewProducts(details.ProductName, details.ProductPrice, details.ProductCategory);\n});\ncy.pause();\ncy.url().should(\"include\", \"dashboard\");\ncy.get(\"h1\").debug().should(\"contain.text\", \"Product Dashboard\");",
+              "err": {},
+              "uuid": "0b56123a-28dd-4f7d-b8a1-494c32d1b9c8",
+              "parentUUID": "808b483e-73a2-4a47-adec-8eebc95cbcac",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "0b56123a-28dd-4f7d-b8a1-494c32d1b9c8"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 7260,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "790e07a7-1224-4daf-b75b-33ceb24b15da",
+      "title": "",
+      "fullFile": "cypress\\e2e\\task1_custom_commands.cy.js",
+      "file": "cypress\\e2e\\task1_custom_commands.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "20a23716-7d36-437c-a23d-3d6952460f86",
+          "title": "Cypress Mini Shop UI Testing - using custom commands",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Add New Product",
+              "fullTitle": "Cypress Mini Shop UI Testing - using custom commands Add New Product",
+              "timedOut": null,
+              "duration": 4398,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.addProducts({\n  \"productName\": \"Mobile\",\n  \"productPrice\": \"$1500\",\n  \"productCategory\": \"Electronics\"\n});",
+              "err": {},
+              "uuid": "ccfb220f-5a5a-44ba-ad23-8a833b2f30cd",
+              "parentUUID": "20a23716-7d36-437c-a23d-3d6952460f86",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "ccfb220f-5a5a-44ba-ad23-8a833b2f30cd"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 4398,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
