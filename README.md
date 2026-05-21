@@ -1,1 +1,1 @@
-html report : C:\Users\crayo\Music\coursera\Cypress Mini Shop\mochawesome-report\mochawesome.html  
+html report : https://sugapriya5409.github.io/coursera-submission/mochawesome.html
